@@ -1,0 +1,28 @@
+<div class="grid grid-cols-2 h-screen place-items-center">
+    <div class="card w-full flex flex-col flex-wrap justify-center items-center gap-4 px-4">
+        <h1 class="text-3xl">Welcome Again!</h1>
+        <form [formGroup]="loginForm" class="w-full flex flex-col justify-center items-center gap-3">
+            <p-floatlabel variant="on" class="w-1/2">
+                <input pInputText id="username_label" formControlName="username" autocomplete="off" class="w-full" />
+                <label for="username_label">Username</label>
+            </p-floatlabel>
+            <p-floatlabel variant="on" class="w-1/2">
+                <p-password inputId="password_label" formControlName="password" [toggleMask]="true" styleClass="block w-full" inputStyleClass="w-full" />
+                <label for="password_label">Password</label>
+            </p-floatlabel>
+            <button class="bg-[#CE97B0] hover:bg-[#cb8eaa] text-white font-bold py-2 px-4 rounded w-1/2">
+                Button
+            </button>
+        </form>
+    </div>
+    <div class="w-full h-full flex justify-center items-center p-4">
+        <p-imagecompare class="w-full h-full max-h-screen shadow-lg rounded-2xl">
+            <ng-template #left>
+                <img src="assets/1.jpg" class="h-full w-full object-cover" />
+            </ng-template>
+            <ng-template #right>
+                <img src="assets/2.jpg" class="h-full w-full object-cover" />
+            </ng-template>
+        </p-imagecompare>
+    </div>
+</div>

@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+:root {
+    --primary-color: #F4A9A8; /* Customize the Aura theme */
+  }
+
+  :root {
+    --aura-primary-color: #ff5722; /* Change primary color */
+    --aura-primary-text-color: #ffffff; /* Text color on primary buttons */
+    --aura-surface-ground: #f4f4f4; /* Background color */
+    --aura-surface-card: #ffffff; /* Card background */
+    --aura-border-radius: 8px; /* Border radius for components */
+    --aura-primary-color: #F4A9A8; /* Change primary color to purple */
+    --aura-primary-color-hover: #f59796; /* Darker shade on hover */
+    --aura-primary-text-color: #fff; /* White text */
+    --aura-border-color: #d1d5db; /* Light gray borders */
+    --aura-shadow-color: rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+    
